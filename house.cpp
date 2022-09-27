@@ -29,12 +29,14 @@ int main () {
     cansOfPaint = totalSf / sfPerCan;
 
     std::cout << "\nA side wall that is";
-    std::cout << "' wide and ";
-    std::cout << "' wide and ";
-    std::cout << "' wide and ";
-    std::cout << "' wide and ";
-    std::cout << "' wide and ";
-    std::cout << "' wide and ";
+    std::cout << width << "' wide and ";
+    std::cout << wallHeight << "' tall to the roof bottom ";
+    std::cout << totalHeight << "' tall to the rooftop ";
+    std::cout << "containing a window that is ";
+    std::cout << windowWidth << "' wide and ";
+    std::cout << windowHeight << "' tall, ";
+    std::cout << "has " << totalSf << " of paintable wall"; 
+    std::cout << cansOfPaint << " cans of paint";
     std::cout << "(assuming that each can will cover 400 square feet of wall). ";
     std::cout << "Thanks for using Paint Calcuulator 2022. Goodbye! ";
 
