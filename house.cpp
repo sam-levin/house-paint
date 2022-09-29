@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main () {
@@ -29,15 +30,15 @@ int main () {
     cansOfPaint = totalSf / sfPerCan;
 
     std::cout << "\nA side wall that is";
-    std::cout << width << "' wide and ";
-    std::cout << wallHeight << "' tall to the roof bottom ";
-    std::cout << totalHeight << "' tall to the rooftop ";
-    std::cout << "containing a window that is ";
-    std::cout << windowWidth << "' wide and ";
-    std::cout << windowHeight << "' tall, ";
-    std::cout << "has " << totalSf << " of paintable wall"; 
-    std::cout << cansOfPaint << " cans of paint";
-    std::cout << "(assuming that each can will cover 400 square feet of wall). ";
-    std::cout << "Thanks for using Paint Calcuulator 2022. Goodbye! ";
+    std::cout << "\n" << setw(5) << width << "' wide and ";
+    std::cout << "\n" << setw(5) << wallHeight << " tall to the roof bottom ";
+    std::cout << "\n" << setw(5) << totalHeight << "' tall to the rooftop ";
+    std::cout << "\ncontaining a window that is ";
+    std::cout << "\n" << setw(5) << windowWidth << "' wide and ";
+    std::cout << "\n" << setw(5) << windowHeight << "' tall, ";
+    std::cout << "\nhas " << totalSf << " of paintable wall"; 
+    std::cout << "\nand will use " << cansOfPaint << " cans of paint";
+    std::cout << "\n(assuming that each can will cover 400 square feet of wall). ";
+    std::cout << "\n\nThanks for using Paint Calcuulator 2022. Goodbye! ";
 
 }
